@@ -4,7 +4,7 @@
     $password = '';
     $pdo = new PDO($dsn, $login, $password);
 
-    $request = 'SELECT taskText , person, priority, taskDate FROM tasks ORDER BY id';
+    $request = 'SELECT * FROM tasks ORDER BY id';
     $result = $pdo->query($request);
 
     if(!$result) {
@@ -25,14 +25,15 @@
         <tbody>
       <?php
 
-      while($ligne = $result->fetch(PDO::FETCH_NUM)) {
+      while($data = $result->fetch(PDO::FETCH_ASSOC)) {
         echo "<tr>";
-        echo "<td><input type='checkbox' name='check[]' value='id' /></td>";
-        foreach ($ligne as $valeur) {
-          echo "<td>$valeur</td>";
-        }
+        echo "<td><input type='checkbox' name='delete[]' value='".$data['id']."' /></td>";
+        echo "<td>".$data['taskText']."</td>";
+        echo "<td>".$data['person']."</td>";
+        echo "<td>".$data['priority']."</td>";
+        echo "<td>".$data['taskDate']."</td>";
         echo "</tr>";
-      }; 
+      };
     };
     ?>
         </tbody>
