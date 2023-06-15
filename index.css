@@ -17,7 +17,17 @@ thead, button {
     height: 100px;
 }
 
-button {
-    height: 5%;
+.buttons {
+    display: flex;
+    justify-content: end;
+    margin-right: 16%;
+}
+
+#editButton, #deleteButton {
+    border: 1px green solid;
+    padding: 7px;
     width: 10%;
+    margin-top: 1%;
+    margin-left: 1%;
+    cursor: pointer;
 }
