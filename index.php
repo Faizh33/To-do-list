@@ -17,6 +17,7 @@
         <input type="text" name="person" id="person" placeholder="Nom" required />
         <select name="priority" id="priority">
             <option value="">Choisir une priorité</option>
+            <option value="a faire">A faire</option>
             <option value="en cours">En cours</option>
             <option value="fait">Fait</option>
             <option value="bloque">Bloqué</option>
