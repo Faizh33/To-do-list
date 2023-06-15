@@ -9,7 +9,7 @@ table, #newTaskForm {
     width: 70%;
 }
 
-thead, button {
+thead, .optionButton {
     background-color: #D7FABB;
 }
 
@@ -17,13 +17,7 @@ thead, button {
     height: 100px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: end;
-    margin-right: 16%;
-}
-
-#editButton, #deleteButton {
+.optionButton {
     border: 1px green solid;
     padding: 7px;
     width: 10%;
