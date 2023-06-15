@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=localhost;dbname=tasks';
+$dsn = 'mysql:host=localhost;dbname=todolist_db';
 $password = '';
 $login = 'root';
 $taskText = $_POST['taskText'];
