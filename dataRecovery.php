@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=tasks';
+    $dsn = 'mysql:host=localhost;dbname=todolist_db';
     $login = 'root';
     $password = '';
     $pdo = new PDO($dsn, $login, $password);
@@ -27,7 +27,7 @@
 
       while($ligne = $result->fetch(PDO::FETCH_NUM)) {
         echo "<tr>";
-        echo "<td><input type='checkbox' name='ma_case[]' value='id' /></td>";
+        echo "<td><input type='checkbox' name='check[]' value='id' /></td>";
         foreach ($ligne as $valeur) {
           echo "<td>$valeur</td>";
         }
