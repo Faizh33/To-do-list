@@ -1,0 +1,23 @@
+table, th, td {
+    padding: 10px;
+    border: 1px solid green;
+    border-collapse: collapse;
+}
+
+table, #newTaskForm {
+    margin: auto;
+    width: 70%;
+}
+
+thead, button {
+    background-color: #D7FABB;
+}
+
+.spaceLine {
+    height: 100px;
+}
+
+button {
+    height: 5%;
+    width: 10%;
+}
